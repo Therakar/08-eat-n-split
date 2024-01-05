@@ -75,6 +75,7 @@ export default function App() {
 
       {selectedFriend && (
         <FormSplitBill
+          key={selectedFriend.id} //Key prop to reset state on changing friend
           selectedFriend={selectedFriend}
           onSplitBill={handleSplitBill}
         />
